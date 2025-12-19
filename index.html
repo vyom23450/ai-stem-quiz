@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AI STEM Practice Generator v0.1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI STEM Practice Problem Generator</h1>
+
+    <label for="subject">Subject</label>
+    <select id="subject">
+      <option>Math</option>
+      <option>Physics</option>
+      <option>Chemistry</option>
+      <option>Biology</option>
+    </select>
+
+    <label for="topic">Topic</label>
+    <input id="topic" placeholder="e.g., quadratic equations" />
+
+    <button id="generateBtn">Generate Quiz</button>
+
+    <h2>Questions</h2>
+    <div id="output" class="output">No questions yet.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

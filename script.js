@@ -1,7 +1,10 @@
 // frontend/script.js
-// Local testing: backend is running on http://localhost:3000
-// After deployment update backendBase to your deployed URL.
-let backendBase = "http://localhost:3000";
+// Automatically uses the correct API endpoint for both local and production environments
+// In production (Vercel), uses relative URL
+// For local development, update to match your local server
+const backendBase = window.location.hostname === 'localhost'
+  ? "http://localhost:3000"
+  : "";
 
 document.getElementById("generateBtn").addEventListener("click", async () => {
   const subject = document.getElementById("subject").value;
